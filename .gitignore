@@ -1,0 +1,70 @@
+# ----------------------------
+# Environment Variables
+# ----------------------------
+.env
+*.env
+.env.*
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# DO NOT TRACK API KEYS
+OPENAI_API_KEY*
+API_KEY*
+
+# ----------------------------
+# Cache and Build Files
+# ----------------------------
+.cache/
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# ----------------------------
+# FAISS / Embeddings / Vector Stores
+# ----------------------------
+*.faiss
+*.index
+*.h5
+*.npy
+vector_store/
+embeddings/
+
+# ----------------------------
+# Logs and Debug Files
+# ----------------------------
+logs/
+*.log
+debug/
+*.tmp
+
+# ----------------------------
+# Data (optional – comment out if you want to track sample datasets)
+# ----------------------------
+data/*.csv
+data/*.json
+data/raw/
+data/*.txt
+
+# ------------------------
