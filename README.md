@@ -54,4 +54,9 @@ uvicorn src.app:app --reload
 ## Example Query
 GET localhost:8000/ask?query=I have chest pain what should I do?
 
-
+### 4. Frontend
+In another terminal
+cd frontend
+npm install
+npm run dev
+Open the URL Vite prints (usually http://localhost:5173) and start chatting with the HealthDialog triage bot.
