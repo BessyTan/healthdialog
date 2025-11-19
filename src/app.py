@@ -6,6 +6,8 @@ from .embed_store import EmbeddingStore
 from .rag_pipeline import RAGPipeline
 from .data_loader import load_clinical_faq
 
+import os
+
 app = FastAPI(title="HealthDialog API")
 
 # CORS for React dev

@@ -23,7 +23,19 @@ healthdialog/
 │   ├── rag_pipeline.py
 │   ├── evaluator.py
 │   ├── hallucination_detector.py
-│   ├── app.py
+│   ├── app.py       # FastAPI backend 
+│
+├── frontend/        # ⬅ NEW React frontend
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.mjs
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── components/
+│       │   ├── ChatMessage.jsx
+│       │   └── SourceCard.jsx
+│       └── styles.css
 │
 ├── data/
 │   ├── symptom_guidelines.json
@@ -52,7 +64,9 @@ uvicorn src.app:app --reload
 
 ---
 ## Example Query
-GET localhost:8000/ask?query=I have chest pain what should I do?
+http://localhost:8000/health
+
+http://localhost:8000/ask?query=What%20is%20hypertension%3F
 
 ### 4. Frontend
 In another terminal
